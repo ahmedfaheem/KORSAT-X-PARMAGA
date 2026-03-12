@@ -1,1 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@config "../tailwind.config.js";
+@source "../*.html";
+@source "./**/*.{html,js,ts,jsx,tsx}";
 @import "tailwindcss";
+
+/*
+custom properties for the theme, 
+these can be used in the tailwind.config.js file 
+to create custom utilities or components. For example, 
+you can use --color-primary to create a custom color utility or a custom button component that uses the primary color.
+and use it as text-primary or bg-primary in your HTML files.
+
+*/
+@theme{
+    --font-bodyFont: 'Poppins', sans-serif;
+    --color-primary: #FF5722;
+    --color-secondary-100: #9dc3ff;
+    --color-secondary-200: #5b9aff;
+}
+
+/*
+@apply diretive is used to apply a set of utility classes to an element.
+For example, you can create a custom button component that uses the primary color 
+and some padding and border radius, and then use @apply to apply those styles to the button.
+to make html pretty
+*/
+
+.badge{
+    @apply absolute top-0 bg-black/50 font-semibold text-yellow-400 rounded-full px-1 py-2 m-2;
+}
+
+.games section > .title{
+    @apply mb-5 pb-3 font-bold border-b-2 border-yellow-600 text-2xl;
+}
+
+.card {
+    @apply w-full h-full overflow-hidden relative rounded-t-md shadow-md;
+}
+
+.btn{
+    @apply cursor-pointer border-2 border-primary px-3 py-2;
+}
