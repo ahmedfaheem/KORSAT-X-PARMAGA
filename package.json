@@ -1,4 +1,7 @@
 {
+  "name": "playzone",
+  "version": "1.0.0",
+  "description": "A modern games landing page built with Tailwind CSS v4",
   "devDependencies": {
     "@tailwindcss/cli": "^4.2.1"
   }

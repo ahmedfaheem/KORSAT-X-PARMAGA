@@ -1,6 +1,6 @@
-# Tailwind CSS v4 From Scratch
+# PlayZone - Games Landing Page
 
-KORSAT X PARMAGA is a small static games landing page built as a Tailwind CSS v4 from-scratch course project.
+PlayZone is a modern games landing page built with Tailwind CSS v4.
 
 ## Stack
 
